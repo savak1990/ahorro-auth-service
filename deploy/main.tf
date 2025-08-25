@@ -67,7 +67,7 @@ locals {
 }
 
 module "cognito" {
-  source = "../../../../ahorro-shared/terraform/cognito"
+  source = "../terraform/cognito"
 
   user_pool_name        = "ahorro-app-stable-user-pool"
   user_pool_client_name = "ahorro-app-stable-client"
