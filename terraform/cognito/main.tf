@@ -33,10 +33,6 @@ resource "aws_cognito_user_pool" "this" {
     required            = true
     mutable             = true
   }
-
-  lifecycle {
-    prevent_destroy = true
-  }
 }
 
 resource "aws_cognito_user_pool_client" "this" {
